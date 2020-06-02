@@ -1,0 +1,25 @@
+{
+  "name": "ajax_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happy870608/ajax_practice.git"
+  },
+  "author": "happy870608 <happy870608@gmail.com>",
+  "license": "MIT",
+  "description": "ajax_practice",
+  "bugs": {
+    "url": "https://github.com/happy870608/ajax_practice/issues"
+  },
+  "homepage": "https://github.com/happy870608/ajax_practice#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {}
+}
