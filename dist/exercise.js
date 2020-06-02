@@ -6,7 +6,7 @@ $(document).ready(function() {
          fname: $('#ajax-form input[name=fName]').val(),
          lname: $('#ajax-form input[name=lName]').val(),
      }, (data) => {
-         [show data in div#ajax-output]
+         $('#ajax-output').html(data)
      })
       
                 })

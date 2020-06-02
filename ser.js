@@ -14,8 +14,13 @@ app.get('/step1', (req, res) => {
        app.listen(port, () => {
          console.log(`listening on port: ${port}`)
          })
-app.use(express.static(`${__dirname}/dist`))
-let nRequests = 0
 app.get('/step5', (req, res) => {
-    res.send(`Hello, ${req.query.fName} ${req.query.lName}`)
+      res.send(`<h1>Hello, ${req.query.fname} ${req.query.lname}</h1>`)
+})
+app.use(express.static(`${__dirname}/dist`))
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.post('/step7', (req, res) => {
+   res.send(`Hello, ${req.body.fname} ${req.body.lname}`)
 })
