@@ -15,4 +15,7 @@ app.get('/step1', (req, res) => {
          console.log(`listening on port: ${port}`)
          })
 app.use(express.static(`${__dirname}/dist`))
-
+let nRequests = 0
+app.get('/step5', (req, res) => {
+    res.send(`Hello, ${req.query.fName} ${req.query.lName}`)
+})
