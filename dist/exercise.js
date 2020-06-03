@@ -10,4 +10,14 @@ $(document).ready(function() {
      })
       
                 })
+ $('.submit_button').click((event) => {
+       event.preventDefault()
+       $.post('./step7', {
+               i1: $('#i1').val(),
+               i2: $('#i2').val(),
+             }, (data) => {
+                    $('#answer').html(data)
+                   })
+     })
+
                  });
